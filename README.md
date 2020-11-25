@@ -4,6 +4,14 @@ Command line utility to restart all of the pods in a Kubernetes namespace. Hit t
 
 Supported by [Qvault](https://app.qvault.io)
 
+## Update - There is a better way
+
+You don't need this script. I recently found thanks to a friend a one-liner using the `kubectl` command directly.
+
+`kubectl -n {NAMESPACE} rollout restart deploy`
+
+I've also update the [blog post](https://qvault.io/2020/10/26/how-to-restart-all-pods-in-a-kubernetes-namespace/) on the subject.
+
 ## Install (Mac and Linux)
 
 ```
